@@ -1,0 +1,44 @@
+﻿@model StarterKit.Web.ViewModels.MyMessageViewModel
+
+@{
+    ViewBag.Title = "Send vs Publish";
+}
+
+<div class="alert alert-info" role="alert">The <a href="https://masstransit.readthedocs.org/en/master/usage/messages.html#specifying-message-names" target="_blank">two main types</a> of messages (contracts) to be used masstransit. This form will submit the quantity [0..n] of messages to send, of each type (myevent, and mycommand). It will send them out quickly, so you can then observe how the consumers behave depending if <strong>send</strong> or <strong>publish</strong> was used. You can then view how they are delivered with their respective topshelf service console output.</div>
+
+
+@using (Html.BeginForm("Submit", "Home"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4>Send vs Publish</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.EventCount, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.EventCount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.EventCount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CommandCount, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.CommandCount, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.CommandCount, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Execute" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
