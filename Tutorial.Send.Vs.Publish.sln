@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarterKit.Contracts", "StarterKit.Contracts\StarterKit.Contracts.csproj", "{A185AFFD-7430-422B-A096-61C107E32037}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarterKit.CommandServiceFast", "StarterKit.CommandServiceFast\StarterKit.CommandServiceFast.csproj", "{D2BBB747-6167-4DB3-A4EF-FBE9BAC4888B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarterKit.CommandServiceSlow", "StarterKit.CommandServiceSlow\StarterKit.CommandServiceSlow.csproj", "{E082AD7A-5EE4-402A-8D32-25C30633A6BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StarterKit.EventService2", "StarterKit.EventService2\StarterKit.EventService2.csproj", "{36E8C203-0B6F-4459-8F98-41CB6ED30731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{E082AD7A-5EE4-402A-8D32-25C30633A6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E082AD7A-5EE4-402A-8D32-25C30633A6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E082AD7A-5EE4-402A-8D32-25C30633A6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E8C203-0B6F-4459-8F98-41CB6ED30731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E8C203-0B6F-4459-8F98-41CB6ED30731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E8C203-0B6F-4459-8F98-41CB6ED30731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E8C203-0B6F-4459-8F98-41CB6ED30731}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

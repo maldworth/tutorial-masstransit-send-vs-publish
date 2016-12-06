@@ -32,7 +32,7 @@
 
             // Starts Mass Transit Service bus, and registers stopping of bus on app dispose
             var bus = container.Resolve<IBusControl>();
-            var busHandle = bus.Start();
+            var busHandle = bus.StartAsync().Result;
 
             if (app.Properties.ContainsKey("host.OnAppDisposing"))
             {

@@ -21,7 +21,7 @@
         {
             _log.Info("Starting bus...");
 
-            _busHandle = _busControl.Start();
+            _busHandle = _busControl.StartAsync().Result;
 
             return true;
         }
